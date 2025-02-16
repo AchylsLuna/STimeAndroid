@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Trackerr</string>
+    <string name="duty_tracker">Duty Tracker</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="paperless_platform">This paperless platform improves efficiency</string>
+    <string name="reduces_errors">reduces errors, and offers an intuitive interface for</string>
+    <string name="manage_duty_logs">students and teachers to manage duty logs</string>
+    <string name="seamlessly">seamlessly</string>
+    <string name="form">Form</string>
+    <string name="hk">HK Duty Tracker </string>
+    <string name="signup">Sign Up</string>
+    <string name="hello">Hello! Let\'s Track your Duty Hours online with ease!</string>
+    <string name="Sid">Student ID</string>
+    <string name="pass">Password</string>
+    <string name="conf">Confirm Password</string>
+    <string name="chck">I agree with the privacy policy</string>
+    <string name="bg">bg</string>
 </resources>

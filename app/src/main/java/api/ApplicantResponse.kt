@@ -1,4 +1,7 @@
-package api
+package com.trackerr.api
 
-class ApplicantResponse {
-}
+data class ApplicantResponse(
+    val status: Int,
+    val message: String,
+    val token: String
+)

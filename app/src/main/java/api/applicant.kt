@@ -1,4 +1,7 @@
-package api
+package com.trackerr.api
 
-class applicant {
-}
+data class Applicant(
+    val student_id: String,
+    val email: String,
+    val password: String
+)

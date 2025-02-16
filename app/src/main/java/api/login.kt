@@ -1,4 +1,6 @@
-package api
+package com.trackerr.api
 
-class login {
-}
+data class Login(
+    val student_id : String,
+    val password: String
+)
