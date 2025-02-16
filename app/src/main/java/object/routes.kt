@@ -1,10 +1,4 @@
-package com.bitbybit.scholarzone.objects
+package object
 
-object Routes {
-    val LandingPage = "LandingPage"
-    val LoginPage = "LoginPage"
-    val SignupPage = "SignUpPage"
-    val HomePage = "HomePage"
-    val ForgotPassword = "ForgotPassword"
-
+class routes {
 }

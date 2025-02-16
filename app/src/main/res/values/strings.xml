@@ -14,4 +14,8 @@
     <string name="conf">Confirm Password</string>
     <string name="chck">I agree with the privacy policy</string>
     <string name="bg">bg</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="i_agree_with_privacy_policy">I Agree with privacy policy</string>
+    <string name="SignUpButton">Sign Up</string>
 </resources>

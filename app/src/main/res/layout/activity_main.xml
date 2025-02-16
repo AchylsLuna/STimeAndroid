@@ -1,108 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
-    tools:context="MainActivity">
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="276dp"
-        android:layout_height="255dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
-        app:srcCompat="@drawable/p_logo" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView2"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:text="Student ID" />
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
 
-    <EditText
-        android:id="@+id/username_input"
-        android:layout_width="323dp"
-        android:layout_height="61dp"
-        android:layout_below="@id/textView3"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/round"
-        android:hint="Username"
-        android:inputType="text"
-        android:padding="18dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/white"
-        android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/username_input"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:text="Password" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="Student Login"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/password_input"
-        android:layout_width="322dp"
-        android:layout_height="61dp"
-        android:layout_below="@id/textView4"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/round"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="18dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/white"
-        android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/login_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_below="@id/password_input"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="45dp"
-        android:background="@drawable/round"
-        android:text="Login"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"
+             />
 
-    <TextView
-        android:id="@+id/signup_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/login_btn"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="22dp"
-        android:text="Doesn't have an account?"
-        android:textColor="@color/black"
-        android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/signupbtn"
-        android:layout_width="69dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/login_btn"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="89dp"
-        android:onClick="SignUp"
-        android:text="Sign Up"
-        android:textAlignment="center"
-        android:textColor="@color/green"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            
+            android:src="@drawable/p_logo" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/usernametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Student ID"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round"
+            android:hint="Enter Student ID"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/passwordtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Password"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/signInbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/blue"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signup_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Don't have an account?"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/signUpbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Sign Up"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
