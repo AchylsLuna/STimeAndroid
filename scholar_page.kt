@@ -7,20 +7,19 @@ import androidx.appcompat.app.AppCompatActivity
 class scholar_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scholar_page)
+        setContentView(R.layout.activity_scholar_page) // Updated to match your XML file name
+
         val spinner1: Spinner = findViewById(R.id.spinner)  // Type of Scholarship
         val spinner2: Spinner = findViewById(R.id.spinner2) // Duty Status
         val spinner3: Spinner = findViewById(R.id.spinner3) // Schedule
-        val spinner4: Spinner = findViewById(R.id.spinner4) // Expert Teacher
-        val spinner5: Spinner = findViewById(R.id.spinner5) // Subject Code
+        val editTextExpert: EditText = findViewById(R.id.editTextText5) // Expert Teacher
+        val editTextSubject: EditText = findViewById(R.id.editTextText6) // Subject Code
         val button: Button = findViewById(R.id.button)
 
         // Data for each spinner
         val scholarshipTypes = listOf("hk25", "hk50", "hk75")
         val dutyStatuses = listOf("BBBS", "External Faci", "Faci Pool", "Internal Faci")
         val schedules = listOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
-        val expertTeachers = listOf("Joe Doe", "Jane Doe")
-        val subjectCodes = listOf("ITE 393", "ITE 400")
 
         // Function to create and set adapter for a spinner
         fun setupSpinner(spinner: Spinner, items: List<String>) {
@@ -33,8 +32,6 @@ class scholar_page : AppCompatActivity() {
         setupSpinner(spinner1, scholarshipTypes)
         setupSpinner(spinner2, dutyStatuses)
         setupSpinner(spinner3, schedules)
-        setupSpinner(spinner4, expertTeachers)
-        setupSpinner(spinner5, subjectCodes)
 
         // Button click listener
         button.setOnClickListener {
@@ -42,8 +39,8 @@ class scholar_page : AppCompatActivity() {
                 Scholarship Type: ${spinner1.selectedItem}
                 Duty Status: ${spinner2.selectedItem}
                 Schedule: ${spinner3.selectedItem}
-                Expert Teacher: ${spinner4.selectedItem}
-                Subject Code: ${spinner5.selectedItem}
+                Expert Teacher: ${editTextExpert.text}
+                Subject Code: ${editTextSubject.text}
             """.trimIndent()
 
             // Show selected values in a Toast message
