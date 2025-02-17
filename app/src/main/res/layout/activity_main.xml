@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="20dp"
-            android:text="Student Login"
+            android:text="HK DUTY TARCKER"
             android:textAlignment="center"
             android:textSize="32sp"
             android:textStyle="bold" />

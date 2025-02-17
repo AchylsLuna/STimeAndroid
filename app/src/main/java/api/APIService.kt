@@ -1,11 +1,15 @@
-package api
+package com.example.trackerr.network
 
-import api.SignupRequest
-import okhttp3.MultipartBody
+import com.example.yourapp.models.AuthResponse
+import com.example.yourapp.models.User
 import retrofit2.Call
-import retrofit2.http.*
+import retrofit2.http.Body
+import retrofit2.http.POST
 
 interface ApiService {
-    @POST("signup") // Replace with your actual endpoint
-    suspend fun signupUser(@Body request: SignupRequest): Response<ApiResponse>
+    @POST("login")
+    fun loginUser(@Body user: User): Call<AuthResponse>
+
+    @POST("signup")
+    fun signUpUser(@Body user: User): Call<AuthResponse>
 }
