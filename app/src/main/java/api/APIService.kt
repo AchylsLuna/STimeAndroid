@@ -1,7 +1,7 @@
-package com.example.trackerr.network
+package api
 
-import com.example.yourapp.models.AuthResponse
-import com.example.yourapp.models.User
+import com.example.trackerr.AuthResponse
+import com.example.trackerr.User
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST
