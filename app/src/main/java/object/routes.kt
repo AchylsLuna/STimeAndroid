@@ -1,4 +1,1 @@
-package object
-
-class routes {
-}
+//

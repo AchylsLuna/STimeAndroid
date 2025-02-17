@@ -1,12 +1,4 @@
-package object
-
-class ForgotPassword {
-}
-package object
-
-class ForgotPassword {
-}
-package object
-
-class ForgotPassword {
-}
+data class ForgotPasswordRequest(
+    val email: String,
+    val newPassword: String
+)

@@ -1,14 +1,16 @@
 package api
 
-class SignUpRequest {
-}
+import retrofit2.http.Body
+import retrofit2.http.POST
+import retrofit2.Response
+
 data class SignupRequest(
-    val studentId: String,
+    val student_id: String,
     val email: String,
-    val password: String
+    val password: String,
+    val confirm_password: String
 )
 
-// ApiResponse.kt
 data class ApiResponse(
     val success: Boolean,
     val message: String,
@@ -19,3 +21,5 @@ data class UserData(
     val id: String,
     val email: String
 )
+
+

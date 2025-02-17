@@ -43,10 +43,11 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     // Networking
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("com.google.code.gson:gson:2.10.1")
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation (libs.gson)
+    implementation (libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation (libs.okhttp)
 
     // Testing
     testImplementation(libs.junit)

@@ -2,15 +2,41 @@ package com.example.trackerr.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import okhttp3.OkHttpClient
+import okhttp3.Request
+
 
 object RetrofitClient {
-    private const val BASE_URL = "http://192.168.1.1/HK%20Duty%20Project/php/register.php"
+    private const val BASE_URL = "http://localhost/DtrProject/HK%20Duty%20Project/php/register.php"
 
-    val instance: ApiService by lazy {
-        val retrofit = Retrofit.Builder()
+    private var authToken: String? = null
+
+    fun setToken(token: String) {
+        authToken = token
+    }
+
+    private val okHttpClient by lazy {
+        OkHttpClient.Builder()
+            .addInterceptor { chain ->
+                val requestBuilder: Request.Builder = chain.request().newBuilder()
+
+                authToken?.let {
+                    requestBuilder.addHeader("Authorization", "Bearer $it")
+                }
+
+                chain.proceed(requestBuilder.build())
+            }.build()
+    }
+
+    private val retrofit by lazy {
+        Retrofit.Builder()
             .baseUrl(BASE_URL)
+            .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        retrofit.create(ApiService::class.java)
+    }
+
+    fun <T> create(service: Class<T>): T {
+        return retrofit.create(service)
     }
 }
