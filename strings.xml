@@ -19,4 +19,8 @@
     <string name="sched">Schedule</string>
     <string name="expert">Expert Teacher</string>
     <string name="subcode">Subject Code</string>
+    <string name="email">Email</string>
+    <string name="studInfo">Student Info</string>
+    <string name="confirm">Confirm</string>
+    <string name="logo">logo</string>
 </resources>
