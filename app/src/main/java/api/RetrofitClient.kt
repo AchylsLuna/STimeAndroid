@@ -7,7 +7,7 @@ import okhttp3.Request
 
 
 object RetrofitClient {
-    private const val BASE_URL = "http://localhost/DtrProject/HK%20Duty%20Project/php/register.php"
+    private const val BASE_URL = "http://192.168.1.1/HK_Duty"
 
     private var authToken: String? = null
 
