@@ -250,30 +250,25 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="408dp"
-        android:layout_height="94dp"
+        android:layout_width="409dp"
+        android:layout_height="92dp"
         android:background="@color/white"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu"
-        tools:layout_editor_absoluteY="633dp" />
+        tools:layout_editor_absoluteY="640dp">
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="400dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="82dp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-    <!-- Bottom Navigation View -->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
