@@ -18,4 +18,5 @@
     <string name="sign_up">Sign Up</string>
     <string name="i_agree_with_privacy_policy">I Agree with privacy policy</string>
     <string name="SignUpButton">Sign Up</string>
+    <string name="sign_in">Sign In</string>
 </resources>

@@ -47,25 +47,36 @@ class activity_signup : AppCompatActivity() {
     }
 
     private fun signUpUser(id: String, pass: String, confirm_pass: String, email: String) {
-        val Signup = SignupRequest(student_id = id, password = pass, confirm_password = confirm_pass, email = email )
+        val signup = SignupRequest(
+            student_id = id,
+            password = pass,
+            confirm_password = confirm_pass,
+            email = email
+        )
         val apiService = RetrofitClient.create(ApiInt::class.java)
 
-        apiService.SignUp(Signup).enqueue(object : Callback<Void> {
+        apiService.SignUp("register", signup).enqueue(object : Callback<Void> {
             override fun onResponse(call: Call<Void>, response: Response<Void>) {
                 if (response.isSuccessful) {
-                    Toast.makeText(this@activity_signup, "Signup Successful", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@activity_signup, "Signup Successful", Toast.LENGTH_SHORT)
+                        .show()
                     startActivity(Intent(this@activity_signup, MainActivity::class.java))
                     finish()
                 } else {
-                    Toast.makeText(this@activity_signup, "Signup Failed: ${response.message()}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@activity_signup,
+                        "Signup Failed: ${response.message()}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
 
-
             override fun onFailure(call: Call<Void>, t: Throwable) {
-                TODO("Not yet implemented")
+                // Implement a proper failure handler
+                Toast.makeText(this@activity_signup, "Error: ${t.message}", Toast.LENGTH_SHORT)
+                    .show()
+                t.printStackTrace()  // Log the error stack trace for debugging
             }
-
         })
     }
 }
