@@ -56,8 +56,7 @@
         android:id="@+id/textTitle"
         android:layout_width="230dp"
         android:layout_height="41dp"
-        android:text="Hello! Let’s Track your Duty Hours
-    online with ease!"
+        android:text="Hello! Let’s Track your Duty Hours online with ease!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.292"
@@ -192,7 +191,7 @@
         tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSignUp"
         android:layout_width="304dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/blue"

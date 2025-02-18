@@ -26,6 +26,7 @@ class activity_signup : AppCompatActivity() {
         confirmPassword = findViewById(R.id.etConPass)
         signUpBtn = findViewById(R.id.button2)
         var email: EditText = findViewById(R.id.etEmail)
+
         signUpBtn.setOnClickListener {
             val id = studentId.text.toString().trim()
             val pass = password.text.toString().trim()
@@ -58,10 +59,10 @@ class activity_signup : AppCompatActivity() {
         apiService.SignUp("register", signup).enqueue(object : Callback<Void> {
             override fun onResponse(call: Call<Void>, response: Response<Void>) {
                 if (response.isSuccessful) {
-                    Toast.makeText(this@activity_signup, "Signup Successful", Toast.LENGTH_SHORT)
-                        .show()
-                    startActivity(Intent(this@activity_signup, MainActivity::class.java))
-                    finish()
+                    Toast.makeText(this@activity_signup, "Signup Successful", Toast.LENGTH_SHORT).show()
+                    // Navigate to ScholarPage after successful signup
+                    startActivity(Intent(this@activity_signup, scholar_page::class.java))
+                    finish()  // Close the current activity so the user can't navigate back to it
                 } else {
                     Toast.makeText(
                         this@activity_signup,
