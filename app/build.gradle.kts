@@ -44,16 +44,17 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation (libs.material.v190)
+    implementation(libs.material.v190)
 
     // Networking
-    implementation (libs.gson)
-    implementation (libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.gson)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
-    implementation (libs.okhttp)
+    implementation(libs.okhttp)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.logging.interceptor)
 
     // Testing
     testImplementation(libs.junit)

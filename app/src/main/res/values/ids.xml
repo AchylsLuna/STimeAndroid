@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="etConfirmPass" type="id" />
-    <item name="btnSignUp" type="id" />
-    <item name="submitButton" type="id" />
-    <item name="TimeIn" type="id">TimeIn</item>
-    <item name="TimeOut" type="id">TimeOut</item>
-    <item name="Date" type="id">Date</item>
-</resources>

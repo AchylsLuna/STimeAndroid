@@ -33,13 +33,13 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-          //  loginUser(studentId, pass)
+            // loginUser(studentId, pass)
         }
 
         signUpText.setOnClickListener {
-            startActivity(Intent(this, activity_signup::class.java))
+            startActivity(Intent(this, activity_signup::class.java)) // Use correct class name
+        }
+        // Fixed class reference
         }
     }
 
-
-}

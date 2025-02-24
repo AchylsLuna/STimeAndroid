@@ -8,11 +8,12 @@ import retrofit2.http.Query
 
 interface ApiInt {
   @Headers("Content-type: application/json")
-  @POST("register.php")
+  @POST("php/api.php")
+  fun signUp(
+    @Query("action") action: String = "register",
+    @Body request: SignupRequest
+  ): Call<ApiResponse>
 
-  fun SignUp(
-    @Query("action") route: String = "register",
-    @Body Signup: SignupRequest
-
-    ): Call<Void>
+  @POST("type.php")
+  fun type(@Body request: ScholarSelectionRequest): Call<Void>
 }

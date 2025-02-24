@@ -12,6 +12,7 @@
 
 
     <Spinner
+
         android:textAlignment="center"
         android:id="@+id/spinner2"
         android:layout_width="339dp"
@@ -56,6 +57,12 @@
         app:layout_constraintVertical_bias="0.764"
         android:background="@drawable/round"
         android:entries="@array/year_level_options"/>
+
+
+
+
+
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -135,6 +142,7 @@
         app:layout_constraintVertical_bias="0.706" />
 
     <Spinner
+
         android:id="@+id/spinner"
         android:layout_width="339dp"
         android:layout_height="48dp"
