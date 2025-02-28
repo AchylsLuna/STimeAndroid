@@ -1,29 +1,27 @@
 package com.example.trackerr
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import api.ApiInt
-import com.example.trackerr.api.ApiService
-import com.example.trackerr.api.ScholarSelectionRequest
+import api.ScholarSelectionRequest
 import com.example.trackerr.network.RetrofitClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class scholar_page : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class ScholarPage : AppCompatActivity() {  // Fixed class name
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_scholar_page)
+        setContentView(R.layout.scholar_page)
 
         // Adjust window insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -37,7 +35,8 @@ class scholar_page : AppCompatActivity() {
         val spinner2 = findViewById<Spinner>(R.id.spinner2)
         val spinner3 = findViewById<Spinner>(R.id.spinner3)
         val spinner4 = findViewById<Spinner>(R.id.spinner4)
-        val signUpButton = findViewById<Button>(R.id.btnSignUp)
+        val signUpButton = findViewById<Button>(R.id.btnSubmit) // Ensure this button exists in your XML
+        val dtrButton = findViewById<Button>(R.id.button) // Ensure this button exists in your XML
 
         // Load spinner options from strings.xml
         val dutyStatusOptions = resources.getStringArray(R.array.duty_status_options).toList()
@@ -59,7 +58,7 @@ class scholar_page : AppCompatActivity() {
         setupSpinner(spinner4, yearLevelOptions)
 
         // Handle sign up button click
-        signUpButton.setOnClickListener {
+        signUpButton.setOnClickListener {  // Wrapped signup logic inside setOnClickListener
             val selectedDutyStatus = spinner1.selectedItem.toString()
             val selectedScholarType = spinner2.selectedItem.toString()
             val selectedCourse = spinner3.selectedItem.toString()
@@ -79,21 +78,26 @@ class scholar_page : AppCompatActivity() {
             apiService.type(request).enqueue(object : Callback<Void> {
                 override fun onResponse(call: Call<Void>, response: Response<Void>) {
                     if (response.isSuccessful) {
-                        Toast.makeText(this@scholar_page, "Selection updated successfully", Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this@scholar_page, activity_dtr::class.java))
+                        Toast.makeText(this@ScholarPage, "Selection updated successfully", Toast.LENGTH_SHORT).show()
+                        // Redirect to sign-in screen
+                        val intent = Intent(this@ScholarPage, MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
                     } else {
-                        Toast.makeText(this@scholar_page, "Failed to update selection", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@ScholarPage, "Failed to update selection", Toast.LENGTH_SHORT).show()
                     }
                 }
 
-                object activity_dtr {
-
-                }
-
                 override fun onFailure(call: Call<Void>, t: Throwable) {
-                    Toast.makeText(this@scholar_page, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ScholarPage, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
                 }
             })
+        }
+
+        // Navigate to DTR page when btndtr is clicked
+        dtrButton.setOnClickListener {
+            val intent = Intent(this, dtr_page::class.java) // Fixed class name
+            startActivity(intent)
         }
     }
 }

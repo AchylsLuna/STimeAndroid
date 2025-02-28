@@ -7,6 +7,8 @@ data class SignupRequest(
     val confirm_password: String
 )
 
+
+
 data class ApiResponse(
     val success: Boolean,
     val message: String,

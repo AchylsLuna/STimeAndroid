@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dtr">
+    tools:context=".dtr_page">
 
 
     <TextView
@@ -264,7 +264,7 @@
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="82dp" />
+            android:layout_height="match_parent" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 

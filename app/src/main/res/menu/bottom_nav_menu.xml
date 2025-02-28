@@ -2,18 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/HomeIcon"
-        android:title="@string/home" />
-
-    <item
         android:id="@+id/nav_dashboard"
-        android:icon="@drawable/DtrIcon"
-        android:title="@string/dashboard" />
+        android:icon="@drawable/dtr"
+        android:title="@string/duty_logs" />
 
     <item
         android:id="@+id/nav_profile"
-        android:icon="@drawable/ProfileIcon"
+        android:icon="@drawable/profile"
         android:title="@string/profile" />
 
 </menu>

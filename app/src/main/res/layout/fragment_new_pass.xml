@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".newPass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/bckbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/arrow"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text= "@string/newpass"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Security"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#989898"
+            android:layout_gravity="left"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:gravity="fill_vertical"
+            android:text="@string/entpass"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            tools:ignore="MissingConstraints,RtlHardcoded"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="34dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:text="@string/entPass"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#989898"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:gravity="fill_vertical"
+            android:text="@string/conpassword"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            tools:ignore="MissingConstraints,RtlHardcoded"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="34dp" />
+
+        <EditText
+            android:id="@+id/confirm_pass"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:text="@string/enter_confirm_password"
+            android:inputType="textPassword"
+            android:hint="@string/confirm_password"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#989898"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/resetPasswordButton"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/green"
+            android:padding="15dp"
+            android:text="@string/reset_password"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

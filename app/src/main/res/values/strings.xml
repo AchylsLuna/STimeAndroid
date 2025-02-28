@@ -22,8 +22,6 @@
     <string name="select_year_placeholder" />
 
 
-
-
     //DUTY TYPES
     <string-array name="duty_status_options">
         <item>Select Duty Status</item>
@@ -48,14 +46,12 @@
     </string-array>
 
     <string-array name="year_level_options">
-    <item>@string/select_year_placeholder</item>
-    <item>First Year</item>
-    <item>Second Year</item>
-    <item>Third Year</item>
-    <item>Fourth Year</item>
-</string-array>
-
-
+        <item>@string/select_year_placeholder</item>
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+    </string-array>
 
 
     <!-- Strings used for fragments for navigation -->
@@ -101,5 +97,23 @@
     <string name="scholartype">Scholartype</string>
     <string name="course">Course</string>
     <string name="year_level">Year Level</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="create_a_new_password_ensure_it_differs_from_previous_ones_for_security">create_a_new_password_ensure_it_differs_from_previous_ones_for_security</string>
+    <string name="Security">create a new password ensure it differs from previous ones for security</string>
+    <string name="update_password">Update Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="confirm_password">confirm_password</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="entPass">Enter Password</string>
+    <string name="entpass">Password</string>
+    <string name="newpass">Set a new password</string>
+    <string name="congratulations_your_password_has_been_changed_click_continue_to_login">Congratulations! Your password has been changed. Click continue to login.</string>
+    <string name="continue">Continue</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="duty_logs">Duty Logs</string>
+    <string name="reset_password">Reset Password</string>
 
 </resources>

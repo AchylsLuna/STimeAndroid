@@ -16,4 +16,5 @@ interface ApiInt {
 
   @POST("type.php")
   fun type(@Body request: ScholarSelectionRequest): Call<Void>
+  abstract fun login(loginRequest: LoginRequest): Any
 }

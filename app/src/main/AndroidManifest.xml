@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -19,10 +19,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".dtr"
-            android:exported="false" />
-        <activity
-            android:name=".scholar_page"
+            android:name=".logs"
             android:exported="false" />
         <activity android:name=".activity_signup" />
         <activity
@@ -35,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Dtr"
+            android:name=".dtr_page"
             android:exported="false" />
         <activity
             android:name=".track"
@@ -46,6 +43,9 @@
             android:exported="true" />
         <activity
             android:name=".type"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
             android:exported="false" />
     </application>
 

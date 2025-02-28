@@ -191,7 +191,7 @@
         tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnSubmit"
         android:layout_width="304dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/blue"
