@@ -5,9 +5,9 @@
     <color name="lightblue">#2AB0EE</color>
     <color name="blue">#406CDA</color>
     <color name="green">#0C991C</color>
-    <color name="lightgreen">#A32EAF11</color>
-    <color name="lightblue1">#A37BEFD3</color>
-    <color name="gray">#A3DBDBDB</color>
+    <color name="lightgreen">#32AF11</color>  <!-- Removed incorrect alpha -->
+    <color name="lightblue1">#7BEFD3</color> <!-- Removed incorrect alpha -->
+    <color name="gray">#DBDBDB</color>       <!-- Removed incorrect alpha -->
     <color name="orange">#F07834</color>
     <color name="purple">#9B29ED</color>
 </resources>

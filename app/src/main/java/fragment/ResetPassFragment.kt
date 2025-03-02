@@ -5,8 +5,6 @@ import android.view.View
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.example.trackerr.R
-import com.example.trackerr.fragment.SuccessPageFragment // Ensure the correct package import
 import fragment.SuccessPageFragment
 
 class ResetPassFragment : Fragment(R.layout.fragment_reset_pass) {

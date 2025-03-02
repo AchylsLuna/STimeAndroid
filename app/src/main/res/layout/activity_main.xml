@@ -145,14 +145,13 @@
                     app:layout_constraintTop_toBottomOf="@+id/signInbtn" />
 
                 <TextView
-                    android:id="@+id/Btnforgot"
+                    android:id="@+id/btnforgot"
                     android:layout_width="317dp"
                     android:layout_height="51dp"
                     android:layout_marginBottom="8dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:text="@string/forgot_password"
-                    android:textAlignment="left"
                     android:textColor="@color/blue"
                     android:textSize="16sp"
                     android:textStyle="bold"

@@ -12,7 +12,7 @@ class pastlogs : AppCompatActivity() {
         setContentView(R.layout.activity_pastlogs)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        val navController = findNavController(R.id.nav_host_fragment)
+        val navController = findNavController(R.id.nav_graph)
 
         // Link Bottom Navigation with Navigation Component
         bottomNavigationView.setupWithNavController(navController)

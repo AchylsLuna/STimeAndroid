@@ -23,7 +23,7 @@ class profile : AppCompatActivity() {
         val btnLogout = findViewById<Button>(R.id.btnLogout)
 
         // Example user profile data (replace with actual data from backend)
-        val userProfile = Profile(
+        val userProfile = profileDetails(
             id = 1,
             name = "Karen Joy C. Ferrer",
             email = "karenjoy@mail.com",

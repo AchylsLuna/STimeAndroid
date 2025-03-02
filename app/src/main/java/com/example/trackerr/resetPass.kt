@@ -1,26 +1,8 @@
-import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.commit
-import com.example.trackerr.R
-import fragment.SuccessPageFragment
-import com.example.trackerr.fragment.SuccessPageFragment
-class resetPass : Fragment(R.layout.fragment_reset_pass) {
+package com.example.trackerr
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+import android.app.Activity
 
-        val resetButton = view.findViewById<Button>(R.id.resetPasswordButton)
-        resetButton.setOnClickListener {
-            parentFragmentManager.commit {
-                replace(R.id.fragment_container, SuccessPageFragment()) // Navigate to successPage
-                addToBackStack(null) // Enables back navigation
-            }
-        }
-    }
+class resetPass : Activity(){
 
-    private fun replace(fragmentContainer: Int, successPageFragment: SuccessPageFragment) {
-        TODO("Not yet implemented")
-    }
+
 }

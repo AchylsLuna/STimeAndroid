@@ -24,6 +24,4 @@ interface APIService {
   ): Call<ResponseBody>
 }
 
-class APIService {
 
-}

@@ -19,6 +19,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="left"
+            android:contentDescription="@string/todo"
             android:src="@drawable/arrow"
             android:backgroundTint="@color/white"/>
 
@@ -26,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Forgot password"
+            android:text="@string/forgot_password2"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -37,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Please enter your email to reset the password "
+            android:text="@string/please_enter_your_email_to_reset_the_password"
             android:textSize="16sp"
             android:textColor="#989898"
             android:layout_gravity="left"
@@ -64,7 +65,7 @@
             android:layout_marginTop="32dp"
             android:backgroundTint="@color/green"
             android:padding="15dp"
-            android:text="Reset Password"
+            android:text="@string/reset_password"
             android:textColor="#FFFFFF"
             android:textSize="18sp"/>
 

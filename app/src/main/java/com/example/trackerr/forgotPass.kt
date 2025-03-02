@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.example.trackerr.R.id.btnforgot
 
 class forgotPass : Fragment() {
 
@@ -16,7 +18,7 @@ class forgotPass : Fragment() {
         val view = inflater.inflate(R.layout.fragment_forgot_pass, container, false)
 
         // Correctly referencing the button ID
-        val resetButton: Button = view.findViewById(R.id.Btnforgot)
+        val resetButton: TextView = view.findViewById(btnforgot)
         val forgotPasswordData = ForgotPassword(email = "user@mail.com")
 
 

@@ -59,8 +59,17 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.androidx.material3.android)
 
+
+    implementation (libs.androidx.fragment)
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    dependencies {
+        implementation (libs.androidx.core.core.ktx.v190)
+        implementation (libs.androidx.emoji2)
+    }
+
 }
