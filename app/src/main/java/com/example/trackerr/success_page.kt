@@ -3,10 +3,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import com.example.trackerr.MainActivity
 import com.example.trackerr.R
 
-class SuccessPageFragment : Fragment(R.layout.success_page) {
+class success_page : Fragment(R.layout.success_page) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

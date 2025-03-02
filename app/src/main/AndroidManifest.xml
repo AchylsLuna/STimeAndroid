@@ -42,7 +42,7 @@
             android:name=".scholar_page"
             android:exported="true" />
         <activity
-            android:name=".type"
+            android:name=".scholarPage"
             android:exported="false" />
         <activity
             android:name=".profile"

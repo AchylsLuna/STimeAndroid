@@ -58,6 +58,7 @@
             android:textSize="18sp" />
 
         <Button
+            android:id="@+id/resetbtn"
             android:layout_width="338dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"

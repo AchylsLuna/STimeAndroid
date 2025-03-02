@@ -1,4 +1,4 @@
-package com.example.trackerr
+package models
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +12,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import api.ApiInt
 import api.ScholarSelectionRequest
+import com.example.trackerr.MainActivity
+import com.example.trackerr.R
 import com.example.trackerr.network.RetrofitClient
 import retrofit2.Call
 import retrofit2.Callback

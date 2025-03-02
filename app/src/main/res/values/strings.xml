@@ -111,9 +111,33 @@
     <string name="entpass">Password</string>
     <string name="newpass">Set a new password</string>
     <string name="congratulations_your_password_has_been_changed_click_continue_to_login">Congratulations! Your password has been changed. Click continue to login.</string>
-    <string name="continue">Continue</string>
     <string name="reset_password">Reset Password</string>
     <string name="duty_logs">Duty Logs</string>
     <string name="reset_password">Reset Password</string>
+    <string name="schedule_nmonday_tuesday">Schedule\nMonday / Tuesday</string>
+    <string name="not_yet_approved_npending_1">Not yet approved\nPending: 1</string>
+    <string name="welcome">welcome</string>
+    <string name="stat">stat</string>
+    <string name="time_out_n09_00">Time out\n09:00</string>
+    <string name="time_in_n09_00">Time in\n09:00</string>
+    <string name="pending">Not yet approved\nPending: 1</string>
+
+    <string name="sched">Schedule\nMonday / Tuesday</string>
+    <string name="logs">View past logs\nMonday / Tuesday</string>
+    <string name="attendance">Attendance</string>
+    <string name="text">text</string>
+    <string name="timeIn">Time in</string>
+    <string name="scholarship_nexpert_teacher_nschedule_nhk_duty_status_n">Scholarship:\nExpert Teacher:\nSchedule:\nHK Duty Status:\n</string>
+    <string name="user_name">User Name</string>
+    <string name="schedules">Schedule</string>
+    <string name="time_outt">Time out\n09:00</string>
+    <string name="timein">Time in\n09:00</string>
+    <string name="dates">Date:</string>
+    <string name="timee">Time In:</string>
+    <string name="outt">Time Out:</string>
+    <string name="submit">Submit</string>
+    <string name="add_duty_logs">Add Duty Logs</string>
+    <string name="enter_time_out">Enter Time Out</string>
+    <string name="view_past_logs">View Past Logs</string>
 
 </resources>

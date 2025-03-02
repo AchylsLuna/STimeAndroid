@@ -9,7 +9,7 @@
         android:id="@+id/FirstFragment"
         android:name="fragment.FirstFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/activity_logs" >
+        tools:layout="@layout/activity_pastlogs" >
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
